@@ -44,6 +44,10 @@ There are other things that this crude model will get wrong.  The
 general strategy is to dump the model to a json file and make any
 corrections by hand.
 
+Why do we only use 10 days of history?  Because that is the default
+maximum that homeassistant stores, and reddit is full of warnings that
+it will become unusably slow if you try to store more.
+
 ## Usage
 
 `$ ./autopilot.py --model_file /model.json/ model`
